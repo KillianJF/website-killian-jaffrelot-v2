@@ -14,9 +14,9 @@
 
 <body>
 
-
-    <div class="cover">
 <!-- ---------------------- COVER ---------------------- -->
+    <div class="cover">
+
     <header>
         <div class="nav">
             <input type="checkbox" id="nav-check">
@@ -59,7 +59,28 @@
                 <img src="/assets/icons/linkedin.png" alt="linkedin">
             </a>
         </div>
+        <div class="arrow-container">
+            <div class="arrow" id="arrow"></div>
+        </div>
     </div>
+
+
+    <script>
+        window.onscroll = function () {
+	let scrollPos = window.scrollY;
+	let arrow = document.getElementById("arrow");
+	if (scrollPos <= 3) {
+		arrow.classList.add("fade-in");
+		arrow.classList.remove("fade-out");
+	} else {
+		let arrow = document.getElementById("arrow");
+		arrow.classList.remove("fade-in");
+		arrow.classList.add("fade-out");
+	}
+};
+    </script>
+
+    
 
     <!-- ---------------- A PROPOS ------------- -->
     <section class="a-propos">
@@ -82,25 +103,64 @@
             PORTFOLIO
         </h2>
         <div class="portfolio-img">
-  
-            <img src="./assets/images/m-routine.jpg" alt="preview routine">
-
-            <img src="./assets/images/m-ateliersDavid.jpg" alt="preview ateliers David">
-
-            <img src="./assets/images/m-couillaudCarrefour.jpg" alt="preview Carrefour">
-
-            <img src="./assets/images/m-couillaudOeno.jpg" alt="preview Oenotourisme">
-
-            <img src="./assets/images/m-pourquoipas.JPG" alt="preview Pourquoi pas">
-
-            <img src="./assets/images/m-marryoke.png" alt="preview marryoke">
-        </div>
+            <figure class="snip0019">
+                <img src="./assets/images/m-routine.jpg" alt="sample14"/>
+                <figcaption>
+                    <div><h2>What <span>state</span> do you live in?</h2></div>
+                    <div><p>Denial. Miss Wormwood: I don't suppose I can argue with that.</p></div>
+                    <a href="https://google.com"></a>
+                    
+                </figcaption>			
+            </figure>
+            <figure class="snip0019">
+                <img src="./assets/images/m-ateliersDavid.jpg" alt="sample12"/>
+                <figcaption>
+                    <div><h2>If we wanted more <span>leisure</span></h2></div>
+                    <div><p>We'd invent machines that do things less efficiently.</p></div>
+                    <a href="#"></a>
+                </figcaption>			
+            </figure>
+            <figure class="snip0019">
+                <img src="./assets/images/m-couillaudCarrefour.jpg" alt="sample13"/>
+                <figcaption>
+                    <div><h2>I <span>propose</span> we leave <span>math</span> </h2></div>
+                    <div><p>To the machines and go play outside.</p></div>
+                    <a href="#"></a>
+                </figcaption>			
+            </figure>
+            <figure class="snip0019">
+                <img src="./assets/images/m-couillaudOeno.jpg" alt="sample14"/>
+                <figcaption>
+                    <div><h2>What <span>state</span> do you live in?</h2></div>
+                    <div><p>Denial. Miss Wormwood: I don't suppose I can argue with that.</p></div>
+                    <a href="#"></a>
+                </figcaption>			
+            </figure>
+            <figure class="snip0019">
+                <img src="./assets/images/m-marryoke.png" alt="sample15"/>
+                <figcaption>
+                    <div><h2>If we wanted more <span>leisure</span></h2></div>
+                    <div><p>We'd invent machines that do things less efficiently.</p></div>
+                    <a href="#"></a>
+                </figcaption>			
+            </figure>
+            <figure class="snip0019">
+                <img src="./assets/images/m-pourquoipas.JPG" alt="sample16"/>
+                <figcaption>
+                    <div><h2>I <span>propose</span> we leave <span>math</span> </h2></div>
+                    <div><p>To the machines and go play outside.</p></div>
+                    <a href="#"></a>
+                </figcaption>			
+            </figure>   
+        </div>  
         <div class="voir-plus-portfolio" >
             <a class="link " href="#">Voir plus</a>
-        </div>
-        
-        
+        </div> 
     </section>
+
+
+
+
 
     
 

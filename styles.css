@@ -240,12 +240,76 @@
   }
 
 
+  /* ------- ARROW --------- */
+
+  .arrow-container {
+    position:absolute;
+    left:50%;
+    bottom:5%;
+  }
+
+  .arrow {
+    width: 45px;
+    height: 45px;
+  /* 	border: 2px solid #fff; */
+  /* 	border-radius: 50%; */
+    transition: ease-in;
+    animation: down 1.5s infinite;
+    -webkit-animation: bounce 1.5s infinite;
+  }
+  .arrow::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: -50%;
+    width: 25px;
+    height: 25px;
+    border-left: 2px solid #fafafa;
+    border-bottom: 2px solid #fafafa;
+    transform: rotate(-45deg);
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translateY(15px);
+    }
+    40% {
+      transform: translate(0);
+    }
+  }
+  
+  @-webkit-keyframes bounce {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translateY(15px);
+    }
+    40% {
+      transform: translate(0);
+    }
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transition: 1s all ease-in;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transition: 1s all ease-out;
+  }
+  
+
 
 
   /* -------------------------------- A PROPOS ------------------------------- */
 
   .a-propos {
-      padding:100px 0  50px 0;
+      padding:100px 0  100px 0;
       width:100%;
       background: #1D1D1D;
       display:flex;
@@ -327,10 +391,10 @@
     margin:50px;
   }
 
-  .portfolio-img > img {
+  .snip0019 > img {
     border:rgba(255, 255, 255, 0.2) solid 1px;
     max-width: 400px;
-    height: auto;
+    height: 100%;
   }
 
   .voir-plus-portfolio {
@@ -347,9 +411,9 @@
       margin:0px;
     }
 
-    .portfolio-img > img {
-      max-width: 90vw;
-      margin:2vw;
+    .snip0019 > img {
+      width:100%;
+
     }
     .voir-plus-portfolio {
       padding:5vh;
@@ -358,186 +422,16 @@
 
 
 
+  /* -------- HIDDEN TEXT----------- */
 
-/* ------------------------ ENTREPRISE ---------------------- */
-
-.entreprises {
-  background: #1D1D1D;
-  padding:10vh 0;
-}
-
-.entreprises-img {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.entreprises-img > img {
-  width: 20vw;
-  height: auto;
-}
-
-@media (max-width:768px) {
-  .entreprises-img {
-    display: flex;
-    flex-direction: column;
-  }
-  .entreprises-img > img {
-    width: 70vw;
-    height: auto;
-  }  
-}
-
-
-
-/* ------------------------ INSTAGRAM ----------------------- */
-
-.instagram {
-  padding:10vh 0;
-}
-
-.instagram > h2, .instagram > a >p {
-  color:black;
-  text-align: center;
-}
-
-.instagram-img {
-  display:flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.instagram-img-row {
-  display: flex;
-  justify-content: center;
-}
-
-.instagram-img-row > img {
-margin: 0.5vw;
-  width:20vw;
-}
-
-.voir-plus-instagram {
-  padding:5vh;
-  display: block;
-  text-align: center;
-}
-
-
-
-
-
-
-
-@media (max-width:768px) {
-  .instagram {
-    padding:5vh 0;
-  }
-.voir-plus-instagram {
-  padding:2vh;
-  display: block;
-  text-align: center;
-}
-}
-
-
-
-/* ------- hover button --------- */
-.button-insta::before {  
-  transform: scaleX(0);
-  transform-origin: bottom right;
-}
-
-.button-insta:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.button-insta::before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  inset: 0 0 0 0;
-  background:radial-gradient(circle at 30% 107%, rgba(253, 244, 151,50%) 0%, rgba(253, 244, 151,50%) 5%, rgba(253, 89, 73, 50%) 45%,rgba(214, 36, 159,50%) 60%,rgba(40, 90, 235,50%) 90%);;
-  z-index: -1;
-  transition: transform .3s ease;
-}
-
-.button-insta {
-  margin-right: auto;
-  margin-left: auto;
-  padding:5px;
-  display: table;
-  position: relative;
-}
-
-
-
-
-
-
-
-/* --------------------------- FOOTER -------------------- */
-
-
-footer {
-  background-color: #1D1D1D;
-
-}
-
-.blocks {
-  padding:50px;
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.blocks > div {
-  text-align:center;
-}
-
-.blocks > div > img {
-  margin:30px;
-}
-
-.fin-footer {
-  text-align:center;
-}
-
-.fin-footer > p {
-  margin:0;
-}
-
-
-.fin-footer > div > img {
-  margin:10px;
-}
-
-@media (max-width:768px) {
-  .blocks {
-
-    flex-direction: column;
-
-  }
-}
-
-
-
-
-
-
-
-
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
 figure.snip0019 {
-  font-family: 'Raleway', Arial, sans-serif;
+
   color: #fff;
   position: relative;
   overflow: hidden;
   margin: 10px;
   min-width: 220px;
-  max-width: 310px;
+  max-width: 400px;
   max-height: 220px;
   width: 100%;
   background: #000000;
@@ -657,20 +551,178 @@ figure.snip0019:hover figcaption::before {
 }
 
 
-/* Demo purposes only */
-html {
-  height: 100%;
+
+
+
+
+
+
+
+/* ------------------------ ENTREPRISE ---------------------- */
+
+.entreprises {
+  background: #1D1D1D;
+  padding:10vh 0;
 }
-body {
-  background-color: #212121;
+
+.entreprises-img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  height: 100%;
+  flex-direction: row;
+  margin-top:5%;
+}
+
+.entreprises-img > img {
+  width: 20vw;
+  height: auto;
+}
+
+@media (max-width:768px) {
+  .entreprises-img {
+    display: flex;
+    flex-direction: column;
+    margin-top:10%;
+  }
+  .entreprises-img > img {
+    width: 50vw;
+    height: auto;
+  }  
 }
 
 
+
+/* ------------------------ INSTAGRAM ----------------------- */
+
+.instagram {
+  padding:10vh 0;
+}
+
+.instagram > h2, .instagram > a > p {
+  color:black;
+  text-align: center;
+}
+
+.instagram-img {
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.instagram-img-row {
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-img-row > img {
+  margin: 0.5vw;
+  width:20vw;
+}
+
+.voir-plus-instagram {
+  padding:5vh;
+  display: block;
+  text-align: center;
+}
+
+
+
+
+
+
+
+@media (max-width:768px) {
+  .instagram {
+    padding:5vh 0;
+  }
+.voir-plus-instagram {
+  padding:2vh;
+  display: block;
+  text-align: center;
+}
+}
+
+
+
+/* ------- hover button --------- */
+.button-insta::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.button-insta:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.button-insta::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background:radial-gradient(circle at 30% 107%, rgba(253, 244, 151,50%) 0%, rgba(253, 244, 151,50%) 5%, rgba(253, 89, 73, 50%) 45%,rgba(214, 36, 159,50%) 60%,rgba(40, 90, 235,50%) 90%);;
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+.button-insta {
+  margin-right: auto;
+  margin-left: auto;
+  padding:5px;
+  display: table;
+  position: relative;
+}
+
+
+
+
+
+
+
+/* --------------------------- FOOTER -------------------- */
+
+
+footer {
+  background-color: #1D1D1D;
+
+}
+
+.blocks {
+  padding:50px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.blocks > div {
+  text-align:center;
+}
+
+.blocks > div > img {
+  margin:30px;
+}
+
+.fin-footer {
+  text-align:center;
+}
+
+.fin-footer > p {
+  margin:0;
+}
+
+
+.fin-footer > div > a > img {
+  margin:10px;
+}
+
+@media (max-width:768px) {
+  .blocks {
+
+    flex-direction: column;
+
+  }
+}
 
 
 
