@@ -37,7 +37,38 @@
     color: #FFFFFF;
   }
 
+  .link {
+    padding:5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    width:20vw;
+    border:solid 3px white;
+    transition-duration: 0.3s;
+  }
 
+  .link:hover {
+    background-color: #FFFFFF;
+    color:#000000;
+
+  }
+
+
+  .link2 {
+    padding:5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    color:black;
+    width:20vw;
+    border:solid 3px black;
+    transition-duration: 0.3s;
+  }
+
+
+  .link2:hover {
+    background-color: black;
+    color:white;
+
+  }
 
   @media (max-width:768px) {
     h1 {
@@ -64,11 +95,6 @@
       color:white;
   }
 
-  .link {
-    text-decoration:underline;
-  }
-
-
 
   /* ---------------------- NAVBAR ------------------------- */
 
@@ -87,8 +113,6 @@
   
   .nav > .nav-header > .nav-title {
     display: inline-block;
-    width: 295px;
-    height: 36px;
     margin-left: 50px;
     margin-top: 30px;
     margin-right: 5%;
@@ -131,11 +155,16 @@
   }
   
   @media (max-width:768px) {
+    .nav > .nav-header > .nav-title {
+      margin-left: 5%;
+    }
+
+
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
-      right: 40px;
-      top: 30px;
+      right: 20px;
+      top: 20px;
     }
     .nav > .nav-btn > label {
       display: inline-block;
@@ -253,8 +282,10 @@
       text-align: right;
       right:0;
       bottom: 10px;
-      text-decoration: underline;
   }
+
+
+
 
   @media (max-width:768px) {
     .a-propos {
@@ -277,6 +308,7 @@
 
 
 
+
   /* -------------------------- PORTFOLIO ------------------------- */
 
 
@@ -284,7 +316,6 @@
     background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./assets/images/bg-portfolio.jpg);
     background-size: cover;
     padding: 80px 0 50px 0;
-
   }
 
   .portfolio-img {
@@ -303,9 +334,9 @@
   }
 
   .voir-plus-portfolio {
+    display:block;
     text-align: center;
-    max-width: 400px;
-    
+    padding:0px;
   }
 
 
@@ -320,6 +351,9 @@
       max-width: 90vw;
       margin:2vw;
     }
+    .voir-plus-portfolio {
+      padding:5vh;
+    }
   }
 
 
@@ -329,7 +363,7 @@
 
 .entreprises {
   background: #1D1D1D;
-  padding:5vh;
+  padding:10vh 0;
 }
 
 .entreprises-img {
@@ -359,6 +393,7 @@
 /* ------------------------ INSTAGRAM ----------------------- */
 
 .instagram {
+  padding:10vh 0;
 }
 
 .instagram > h2, .instagram > a >p {
@@ -381,3 +416,70 @@
 margin: 0.5vw;
   width:20vw;
 }
+
+.voir-plus-instagram {
+  padding:5vh;
+  display: block;
+  text-align: center;
+}
+
+
+
+@media (max-width:768px) {
+  .instagram {
+    padding:5vh 0;
+  }
+.voir-plus-instagram {
+  padding:2vh;
+  display: block;
+  text-align: center;
+}
+}
+
+
+/* --------------------------- FOOTER -------------------- */
+
+
+footer {
+  background-color: #1D1D1D;
+
+}
+
+.blocks {
+  padding:50px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.blocks > div {
+  text-align:center;
+}
+
+.blocks > div > img {
+  margin:30px;
+}
+
+.fin-footer {
+  text-align:center;
+}
+
+.fin-footer > p {
+  margin:0;
+}
+
+
+.fin-footer > div > img {
+  margin:10px;
+}
+
+@media (max-width:768px) {
+  .blocks {
+
+    flex-direction: column;
+
+  }
+}
+
+
+
