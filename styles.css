@@ -86,6 +86,7 @@
   }
   
   body {
+    background-color: black;
     margin: 0px;
     padding: 0px;
   }
@@ -725,4 +726,69 @@ footer {
 }
 
 
+
+
+
+
+
+
+
+
+
+/* ----------------------------- !!!!!!!!!! PORTFOLIO PAGE !!!!!!!!! ------------------------------------ */
+
+.h2-portfolio {
+  margin-top:10%;
+}
+
+
+.portfolio-container {
+  padding:7vw;
+  overflow:scroll;
+  margin: 5% auto;
+  width:90vw;
+  height:90vh;
+  border: solid white 3px;
+  
+}
+
+
+.portfolio-project-container {
+  width:100%;
+  position:relative;
+}
+
+.portfolio-project-container-right {
+  width:50vw;
+  height: 500px;
+  background-color:#1D1D1D;
+}
+
+.portfolio-video-container-right {
+  width:30vw;
+  position:absolute;
+  right:0%;
+  top:50%;
+  transform: translate(0,-50%);
+
+
+}
+
+
+.iframe-container { 
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  }
+  
+  .iframe-container iframe {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
 
