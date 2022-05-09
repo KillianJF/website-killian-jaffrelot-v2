@@ -124,10 +124,9 @@
 
   /* ---------------------- NAVBAR ------------------------- */
 
-
   
   .nav {
-    height: 50px;
+    
     width: 100%;
     position: relative;
     
@@ -254,22 +253,26 @@
 
   /* -------------------- COVER --------------------- */
 
-  .cover {
-      background:  linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(./assets/images/cover.JPG);
-      background-size: cover;
-      height:100vh;
-      position:relative;
-      
+  .full-screen-video-container {
+    background:  linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    position:relative;
+    height:90vh;
+    width: 100%;
+    overflow:hidden;
   }
 
-  @media (max-width:768px) {
-      .cover {
-          background-size:cover;
-          background-position: center;
-          height:70vh;
-      }
-
+  .full-screen-video-container video {
+    z-index: -1;
+    position:absolute;
+    width:auto;
+    height:auto;
+    min-width:100%;
+    min-height:100%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
   }
+
 
   .social {
       display: flex;
@@ -933,3 +936,81 @@ footer {
     }
     
     
+
+
+
+    
+/* ----------------------------- !!!!!!!!!! CONTACT PAGE !!!!!!!!! ------------------------------------ */
+
+.body-contact {
+  background-color: black;
+}
+
+
+.contact-form-container {
+  margin:5%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-form {
+  width:40vw;
+  background-color: #1D1D1D;
+  padding:40px;
+}
+
+input {
+  width:90%;
+  height: 50px;
+  background-color:#ffff;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 27px;
+  
+}
+
+textarea
+{
+  width:90%;
+  height: 200px;
+  background-color:#FFFFFF;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 27px;
+  
+}
+
+button[type=submit] {
+  margin:10px;
+  width:100px;
+  padding:10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  border:none;
+}
+
+
+@media (max-width:768px) {
+  .contact-form {
+    width:80vw;
+  }
+  .contact-form-container {
+    margin:20% 5%;
+  }
+  button[type=submit] {
+    font-size:15px;
+  }
+
+}
+
+
