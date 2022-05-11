@@ -92,6 +92,7 @@
   }
   
   body {
+    scroll-behavior: smooth;
     background-color: white;
     margin: 0px;
     padding: 0px;
@@ -254,9 +255,9 @@
   /* -------------------- COVER --------------------- */
 
   .full-screen-video-container {
-    background:  linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+    background-color: rgba(0, 0, 0, 50%);
     position:relative;
-    height:90vh;
+    height:100vh;
     width: 100%;
     overflow:hidden;
   }
