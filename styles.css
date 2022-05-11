@@ -2,6 +2,11 @@
     box-sizing: border-box;
   }
   
+  html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    perspective: 10px;
+  }
 
   h1 {
     font-family: 'Lato', sans-serif;
@@ -92,7 +97,7 @@
   }
   
   body {
-    scroll-behavior: smooth;
+
     background-color: white;
     margin: 0px;
     padding: 0px;
@@ -199,6 +204,11 @@
   }
   
   @media (max-width:768px) {
+
+    .nav > .nav-links > a:hover::before {
+      transform: scaleX(0);
+    }
+    
     .nav > .nav-header > .nav-title {
       margin-left: 5%;
     }
@@ -250,6 +260,7 @@
       overflow-y: auto;
     }
   }
+
 
 
   /* -------------------- COVER --------------------- */
@@ -357,6 +368,9 @@
   /* -------------------------------- A PROPOS ------------------------------- */
 
   .a-propos {
+
+
+
       padding:100px 0  100px 0;
       width:100%;
       background: #1D1D1D;
@@ -695,6 +709,9 @@ figure.snip0019:hover figcaption::before {
   padding:2vh;
   display: block;
   text-align: center;
+}
+.instagram-img-row > img {
+  width:30vw;
 }
 }
 
