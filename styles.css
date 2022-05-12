@@ -29,7 +29,7 @@
     font-family: 'Lato', sans-serif;
     font-weight: medium;
     font-size: 1.6vw;
-    color: #FFFFFF;
+    color: rgb(51, 197, 205);
   }
   h4 {
     font-family: 'Lato', sans-serif;
@@ -42,7 +42,7 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 1.15vw;
+    font-size: 20px;
     line-height: 27px;
     
     color: #FFFFFF;
@@ -58,9 +58,9 @@
   }
 
   .link:hover {
-    background-color: #FFFFFF;
-    color:#000000;
-
+    border: solid 3px rgb(51, 197, 205);
+    background-color: rgb(51, 197, 205);
+    color:white;
   }
 
 
@@ -76,7 +76,8 @@
 
 
   .link2:hover {
-    background-color: black;
+    border: solid 3px rgb(51, 197, 205);
+    background-color: rgb(51, 197, 205);
     color:white;
 
   }
@@ -109,24 +110,7 @@
   }
 
 
-  /* ---------------------- SCROLLBAR ---------------------- */
 
-  .portfolio-container::-webkit-scrollbar {
-    width: 12px; /* width of the entire scrollbar */
-  }
-  
-  .portfolio-container::-webkit-scrollbar-track { /* color of the tracking area */
-    border: 3px solid rgba(255, 255, 255, 20%);
-    border-radius:40px;
-  }
-  
-  .portfolio-container::-webkit-scrollbar-thumb {
-    background-color: white; /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
-  }
-  .portfolio-container::-webkit-scrollbar-thumb:hover {
-    width:10px;
-  }
 
   /* ---------------------- NAVBAR ------------------------- */
 
@@ -186,7 +170,8 @@
     height: 2px;
     bottom: 10px;
     left: 0;
-    background-color: #ffff;
+
+    background-color: rgb(51, 197, 205);
     transform: scaleX(0);
     transition: transform 0.3s ease;
   }
@@ -291,7 +276,8 @@
       flex-direction: column;
       position: absolute;
       top:50%;
-      right:0;
+      right:20px;
+      transform:translate(0,-50%);
   }
 
   .social > a {
@@ -362,7 +348,11 @@
     transition: 1s all ease-out;
   }
   
-
+  @media (max-width:768px) {
+    .arrow-container {
+      bottom: 10%;
+    }
+  }
 
 
   /* -------------------------------- A PROPOS ------------------------------- */
@@ -734,7 +724,7 @@ figure.snip0019:hover figcaption::before {
   position: absolute;
   top: 0; right: 0; bottom: 0; left: 0;
   inset: 0 0 0 0;
-  background:radial-gradient(circle at 30% 107%, rgba(253, 244, 151,50%) 0%, rgba(253, 244, 151,50%) 5%, rgba(253, 89, 73, 50%) 45%,rgba(214, 36, 159,50%) 60%,rgba(40, 90, 235,50%) 90%);;
+  background-color:rgb(88, 238, 255);
   z-index: -1;
   transition: transform .3s ease;
 }
