@@ -810,8 +810,10 @@ footer {
 .portfolio-body {
   background-color:black;
 }
-.h2-portfolio {
+.h1-portfolio, .h1-contact {
+  color:white;
   margin-top:10%;
+  text-align: center;
 }
 .portfolio-body  p {
   line-height: 30px;
