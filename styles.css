@@ -225,6 +225,7 @@
     }
 
     .nav > .nav-links {
+      z-index: 1;
       position: absolute;
       display: block;
       width: 100%;
@@ -239,6 +240,10 @@
       margin-left:10%;
       display: block;
       width: 100%;
+    }
+
+    .nav > .nav-links > a > p{
+      font-size:20px;
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
@@ -298,8 +303,6 @@
   .arrow {
     width: 45px;
     height: 45px;
-  /* 	border: 2px solid #fff; */
-  /* 	border-radius: 50%; */
     transition: ease-in;
     animation: down 1.5s infinite;
     -webkit-animation: bounce 1.5s infinite;
